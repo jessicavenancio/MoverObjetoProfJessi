@@ -9,6 +9,7 @@ var chao;
 function preload(){
     
     //carregar imagens
+    //você precisar carregar as outras imagens
     auauImg = loadAnimation("auAu.jpg");
 }
 
@@ -28,7 +29,7 @@ function setup(){
 
     auAu.addAnimation("auAu",auauImg);
 
-    auAu.scale = 0.4;
+    auAu.scale = 0.3;
 
     auAu.x = 700;
 
@@ -50,7 +51,7 @@ function draw(){
     if(keyDown("space")){        
 
         //o que acontece se a condição for verdadeira
-        auAu.velocityY = -5; 
+        auAu.velocityY = -6; 
     } 
 
     auAu.velocityY = auAu.velocityY + 0.5;
